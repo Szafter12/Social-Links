@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Social links profile</title>
+
+
+  <style>
+    :root {
+      --green-color: hsl(75, 94%, 57%);
+      --white-color: hsl(0, 0%, 100%);
+      --grey-700: hsl(0, 0%, 20%);
+      --grey-800: hsl(0, 0%, 12%);
+      --grey-900: hsl(0, 0%, 8%);
+      --ff: "Inter", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-height: 100vh;
+      font-size: 1.6rem;
+      font-family: var(--ff);
+      color: var(--white-color);
+      background-color: var(--grey-900);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card {
+      padding: 2em;
+      width: 300px;
+      background-color: var(--grey-800);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .prof-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    .card__name {
+      margin-top: 0.7em;
+      font-weight: 500;
+      font-size: clamp(1.6rem,3vw,2rem);
+    }
+    .card__role,.card__location {
+      font-size: clamp(1rem,3vw,1.1rem);
+    }
+    .card__location {
+      margin-top: 0.3em;
+      color: var(--green-color);
+      font-weight: 600;
+    }
+    .card__role {
+      margin-top: 1.7em;
+    }
+    .card__links {
+      margin-top: 1.2em;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8em;
+    }
+    .card__link {
+      padding: 0.8em 1.6em;
+      width: 100%;
+      border-radius: 7px;
+      font-size: clamp(1rem,3vw,1.2rem);
+      font-weight: 500;
+      background-color: var(--grey-700);
+      transition: color 0.3s, background-color 0.3s;
+    }
+    .card__link:hover {
+      color: var(--grey-700);
+      background-color: var(--green-color);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <img class="prof-img" src="./assets/images/avatar-jessica.jpeg">
+    <h3 class="card__name">Jessica Randall</h3>
+    <p class="card__location">London, United Kingdom</p>
+    <p class="card__role">"Front-end developer and avid reader"</p>
+    <div class="card__links">
+      <a href="#" class="card__link">GitHub</a>
+      <a href="#" class="card__link">Frontend Mentor</a>
+      <a href="#" class="card__link">Linkedin</a>
+      <a href="#" class="card__link">Twitter</a>
+      <a href="#" class="card__link">Instagram</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
